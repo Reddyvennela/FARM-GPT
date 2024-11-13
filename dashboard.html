@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmAI Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>FarmAI</h1>
+    </nav>
+
+    <div class="container">
+        <div class="dashboard-grid">
+            <!-- Crop Recommendation -->
+            <div class="card">
+                <h3>Preferred Crop Type</h3>
+                <select id="region-select">
+                    <option value="">Select Region</option>
+                    <option value="north">North</option>
+                    <option value="south">South</option>
+                    <option value="east">East</option>
+                    <option value="west">West</option>
+                </select>
+                <div id="crop-recommendation"></div>
+            </div>
+
+            <!-- Weather Forecast -->
+            <div class="card">
+                <h3>Weather Forecast</h3>
+                <div class="weather-forecast" id="weather-forecast">
+                    <!-- Weather data will be populated here -->
+                </div>
+            </div>
+
+            <!-- Chat Board -->
+            <div class="card">
+                <h3>Chat Board</h3>
+                <div class="chat-container" id="chat-container">
+                    <!-- Chat messages will appear here -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="chat-input" placeholder="Type your question...">
+                    <button class="btn" onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+
+            <!-- Pest Detection -->
+            <div class="card">
+                <h3>Pest Detection</h3>
+                <form class="pest-form" id="pest-form">
+                    <input type="text" placeholder="Pest Color">
+                    <input type="text" placeholder="Pest Size in cm">
+                    <select id="location on plant">
+                        <option value="">location on plant</option>
+                        <option value="root">root</option> 
+                        <option value="stem">stem</option>
+                        <option value="leaves">leaves</option> 
+                    <input type="file" accept="image/*">
+                    <button class="btn" type="submit">Detect Pest</button>
+                </form>
+            </div>
+
+            <!-- Calendar -->
+            <div class="card">
+                <h3>Farm Calendar</h3>
+                <div class="calendar" id="calendar">
+                    <!-- Calendar will be populated here -->
+                </div>
+                <button class="btn" onclick="addEvent()">Add Event</button>
+            </div>
+
+            <!-- Government Schemes -->
+            <div class="card">
+                <h3>Government Schemes</h3>
+                <ul class="schemes-list" id="schemes-list">
+                    <!-- Schemes will be populated here -->
+                </ul>
+            </div>
+
+            <!-- Market Prices -->
+            <div class="card">
+                <h3>Market Prices</h3>
+                <table class="market-prices">
+                    <thead>
+                        <tr>
+                            <th>Crop</th>
+                            <th>Price</th>
+                            <th>Market</th>
+                        </tr>
+                    </thead>
+                    <tbody id="market-prices">
+                        <!-- Prices will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Financial Calculator -->
+            <div class="card">
+                <h3>Financial Calculator</h3>
+                <form id="financial-form">
+                    <input type="number" placeholder="Input Cost">
+                    <input type="number" placeholder="Expected Yield">
+                    <input type="number" placeholder="Market Price">
+                    <button class="btn" type="submit">Calculate</button>
+                </form>
+                <div id="financial-results"></div>
+            </div>
+
+            <!-- Farmer Community -->
+            <div class="card">
+                <h3>Farmer Community</h3>
+                <div class="community-section" id="community-section">
+                    <!-- Community requests will be shown here -->
+                </div>
+                <button class="btn" onclick="sendRequest()">Send Request</button>
+            </div>
+
+            <!-- Help Desk -->
+            <div class="card">
+                <h3>Help Desk</h3>
+                <div id="help-desk">
+                    <h4>Common Questions</h4>
+                    <ul id="faq-list">
+                        <!-- FAQs will be populated here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

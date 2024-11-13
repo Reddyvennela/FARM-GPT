@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmGPT - Smart Farming Assistant</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Login/Registration Section -->
+    <div id="auth-section" class="section active">
+        <div class="container">
+            <h1>Welcome to FarmGPT</h1>
+            <div class="auth-forms">
+                <form id="loginForm">
+                    <h2>Login</h2>
+                    <input type="text" placeholder="Phone Number" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+
+                <form id="registerForm">
+                    <h2>Register</h2>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="password" placeholder="Password" required>
+                    <select id="location" required>
+                        <option value="">Select State</option>
+                        <option value="AP">Andhra Pradesh</option>
+                        <option value="AR">Arunachal Pradesh</option>
+                        <option value="AS">Assam</option>
+                        <option value="BR">Bihar</option>
+                        <option value="CG">Chhattisgarh</option>
+                        <option value="CH">Chandigarh</option>
+                        <option value="DL">Delhi</option>
+                        <option vlaue="GA">Goa</option>
+                        <option value="GJ">Gujarat</option>
+                        <option value="HP">Himacahl Pradesh</option>
+                        <option value="HR">Haryana</option>
+                        <option value="JH">Jharkhand</option>
+                        <option value="JK">Jammu and Kashmir</option>
+                        <option value="KA">Karnataka</option>
+                        <option value="KL">Kerala</option>
+                        <option value="MH">Maharastra</option>
+                        <option value="ML">Meghalaya</option>
+                        <option value="MN">Manipur</option>
+                        <option value="MP">Madhya Pradesh</option>
+                        <option value="MZ">Mizoram</option>
+                        <option value="NL">Nagaland</option>
+                        <option value="OD">Odisha</option>
+                        <option value="PB">Punjab</option>
+                        <option value="RJ">Rajasthan</option>
+                        <option value="SK">Sikkim</option>
+                        <option value="TN">TamilNadu</option>
+                        <option value="TR">Tripura</option>
+                        <option value="TS">Telangana</option>
+                        <option value="UK">Uttarakhand</option>
+                        <option value="UP">Uttar Pradesh</option>
+                        <option value="WB">West Bengal</option>
+                        
+                        
+                       
+                        
+                        
+                                            
+                        
+                    </select>
+                    <select id="language" required>
+                        <option value="">Preferred Language</option>
+                        <option value="english">english</option>
+                        <option value="hindi"> हिन्दी</option>
+                        <option value="telugu"> తెలుగు</option>
+                        <option value="tamil"> தமிழ் </option>
+                        <option value="kannada">ಕನ್ನಡ</option>
+                        <option value="malayalam">മലയാളം</option>
+                        <option value="marathi"> मराठी</option>
+                        <option value="urdu"> اردو</option>
+                        <option value="punjabi"> ਪੰਜਾਬੀ /پنجابی</option>
+                        <option value="assamese"> অসমীয়া</option>
+                        <option value="bengali">বাংলা</option>
+                        <option value="gujarat"> ગુજરાતી</option>
+                        <option value="kashmiri">कश्मीरी</option>
+                        <option value="odia">  ଓଡ଼ି</option>
+                        
+                        <!-- Add all Indian languages -->
+                    </select>
+                    <div class="soil-analysis">
+                        <h3>Soil Analysis</h3>
+                        <input type="text" placeholder="Soil Type">
+                        <input type="text" placeholder="pH Level">
+                        <input type="file" accept="image/*" id="soilImage">
+                    </div>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script.src="login.js"></script.src>
+</body>
+</html>
+    
